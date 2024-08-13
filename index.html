@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ewrold! Where Dreams Come True!</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/Destyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- script -->
+    <script src="./script/index.js" defer></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header id="header">
+        <h1 class="logo">
+          <a href="#"><img src="./assert/header/logo.png" alt="이월드 로고" /></a>
+        </h1>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#">즐길거리</a>
+              <ul class="submenu">
+                <li><a href="#">어트랙션</a></li>
+                <li><a href="#">엔터테인먼트</a></li>
+                <li><a href="#">공연&이벤트</a></li>
+                <li><a href="#">불꽃쇼</a></li>
+                <li><a href="#">주주팜</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">요금/할인</a>
+              <ul class="submenu">
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">할인&혜택</a></li>
+                <li><a href="#">연간회원</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">시설정보</a>
+              <ul class="submenu">
+                <li><a href="#">식음시설</a></li>
+                <li><a href="#">기프트샵</a></li>
+                <li><a href="#">편의시설</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이용안내</a>
+              <ul class="submenu">
+                <li><a href="#">파크이용안내</a></li>
+                <li><a href="#">운휴정보</a></li>
+                <li><a href="#">교통/주차안내</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="spot">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assert/header/ticket.png" alt="예매하기" />
+                <span>예매</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assert/header/people.png" alt="단체예매" />
+                <span>단체</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assert/header/member-card.png" alt="연간회원" />
+                <span>회원</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- slider -->
+      <article class="sliderwrap">
+        <div class="slider_img">
+          <div class="slider_inner">
+            <div class="slider">
+              <img src="./assert/slider/slider1.jpg" class="sliderimg" alt="여름방학 초특가 학생할인" />
+            </div>
+            <div class="slider">
+              <img src="./assert/slider/slider2.jpg" alt="다이나믹 아쿠아밤" />
+            </div>
+            <div class="slider">
+              <img src="./assert/slider/slider3.jpg" alt="트로피컬 아쿠아 월드" />
+            </div>
+          </div>
+        </div>
+        <div class="slider_btn">
+          <a href="javascript:" class="prev" role="button"><</a>
+          <a href="javascript:" class="next" role="button">></a>
+        </div>
+        <div class="slider_dot">
+          <a href="javascript:" class="dot active"></a>
+          <a href="javascript:" class="dot"></a>
+          <a href="javascript:" class="dot"></a>
+        </div>
+      </article>
+
+      <!-- today -->
+      <section id="today">
+        <p>오늘의 운영시간 <span>10:00 ~ 22:00</span></p>
+      </section>
+
+      <!-- attraction -->
+      <section id="attracion">
+        <h1>어트랙션 <span>운영정보</span></h1>
+        <div class="tab_menu">
+          <div class="tab_btn">
+            <ul>
+              <li><a href="javascript:" class="tab_active">판타지월드</a></li>
+              <li><a href="javascript:">매직월드</a></li>
+              <li><a href="javascript:">어드벤처월드</a></li>
+              <li><a href="javascript:">다이나믹월드</a></li>
+            </ul>
+          </div>
+          <div class="tab_cont">
+            <div class="tab_cont1">
+              <ul>
+                <li>
+                  <img src="./assert/attraction-fantasy/fantasy1.jpg" alt="후룸라이드" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>후룸라이드</h3>
+                    <p>운영중<br />10:00 ~ 20:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-fantasy/fantasy2.png" alt="고스트하우스" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>고스트하우스</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-fantasy/fantasy3.jpg" alt="알라딘" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>알라딘</h3>
+                    <p>운영중<br />10:00 ~ 21:00</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab_cont2">
+              <ul>
+                <li>
+                  <img src="./assert/attraction-magic/magic1.jpg" alt="회전목마" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>회전목마</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic2.jpg" alt="스위티컵" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>스위티컵</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic3.jpg" alt="미니카레이싱" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>미니카레이싱</h3>
+                    <p>운영중<br />10:00 ~ 20:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic4.jpg" alt="매직열차" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>매직열차</h3>
+                    <p>운영중<br />10:00 ~ 20:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic5.jpg" alt="개구리점프" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>개구리점프</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic6.jpg" alt="닌자거북이" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>닌자거북이</h3>
+                    <p>운휴</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic7.jpg" alt="미니바이킹" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>미니바이킹</h3>
+                    <p>운영중<br />12:00 ~ 18:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic8.jpg" alt="날으는 코끼리" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>날으는 코끼리</h3>
+                    <p>운영중<br />12:00 ~ 18:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic9.jpg" alt="코코몽 관람차" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>코코몽 관람차</h3>
+                    <p>운휴</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-magic/magic10.jpg" alt="코코몽 비행선" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>코코몽 비행선</h3>
+                    <p>운휴</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-cont3">
+              <ul>
+                <li>
+                  <img src="./assert/attraction-adventure/adventure1.jpg" alt="카멜백" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>카멜백</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-adventure/adventure2.jpg" alt="뮤직익스프레스" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>뮤직익스프레스</h3>
+                    <p>운영중<br />12:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-adventure/adventure3.jpg" alt="범퍼카" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>범퍼카</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-adventure/adventure4.jpg" alt="부메랑" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>부메랑</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-adventure/adventure5.jpg" alt="제트레이스" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>제트레이스</h3>
+                    <p>운휴</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-cont4">
+              <ul>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic1.jpg" alt="메가스윙360" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>메가스윙360</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic2.jpg" alt="스카이싸이클" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>스카이싸이클</h3>
+                    <p>운휴</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic3.jpg" alt="탬버린" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>탬버린</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic4.jpg" alt="바이킹" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>바이킹</h3>
+                    <p>운영중<br />10:00 ~ 20:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic5.jpg" alt="에어레이스" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>에어레이스</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic6.jpg" alt="벌룬레이스" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>벌룬레이스</h3>
+                    <p>운휴</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./assert/attraction-dynamic/dynamic7.jpg" alt="허리케인" />
+                  <div class="background"></div>
+                  <div class="attraction_text">
+                    <h3>허리케인</h3>
+                    <p>운영중<br />10:00 ~ 21:50</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- event -->
+      <section id="event">
+        <h1>진행중인 <span>공연 & 이벤트</span></h1>
+        <article class="e_sliderwrap">
+          <div class="e_slider_img">
+            <div class="e_slider_inner">
+              <div class="e_slider">
+                <img src="./assert/event/event1.png" class="e_sliderimg" alt="틱톡의 집들이 파티" />
+                <div class="event_text">
+                  <span>2024.08.09 ~ 2024.08.17</span>
+                  <h3>틱톡의 집들이 파티</h3>
+                  <p>새롭게 오픈한 어드벤처광장과 주주팜 대형새장에서 사랑새들을 환영하는 파티를 즐겨봐요!</p>
+                </div>
+              </div>
+              <div class="e_slider">
+                <img src="./assert/event/event2.png" alt="에그박사 팬미팅" />
+                <div class="event_text">
+                  <span>2024.08.07 ~ 2024.08.17</span>
+                  <h3>에그박사 팬미팅</h3>
+                  <p>어드벤처 광장 리뉴얼 오픈기념! 에그박사와 함께하는 썸머 피크닉 토크콘서트!</p>
+                </div>
+              </div>
+              <div class="e_slider">
+                <img src="./assert/event/event3.jpg" alt="다이나믹 아쿠아밤" />
+                <div class="event_text">
+                  <span>2024.06.01 ~ 2024.08.25</span>
+                  <h3>다이나믹 아쿠아밤</h3>
+                  <p>그 어느때보다 다이나믹하게 더위를 날려버릴 아쿠아밤이 온다! ARE YOU READY TO BOMB?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="e_slider_btn">
+            <a href="javascript:" class="e_prev" role="button"><</a>
+            <a href="javascript:" class="e_next" role="button">></a>
+          </div>
+          <img class="e_slider_side1" src="./assert/smallBear.svg" alt="캐릭터_스몰베어" />
+          <img class="e_slider_side2" src="./assert/bigBear.svg" alt="캐릭터_빅베어" />
+        </article>
+      </section>
+
+      <!-- discount -->
+      <section id="discount">
+        <h1>내가 받을 수 있는 <span>혜택</span></h1>
+        <ul>
+          <li>
+            <img src="./assert/discount/discount0.jpg" alt="iM뱅크 특별 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>iM뱅크 특별 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount1.png" alt="아이엠스쿨 특별 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>아이엠스쿨 특별 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount2.jpg" alt="여름방학 학생 특별할인(학생증 지참)" />
+            <div class="background">
+              <span>현장 + 온라인 할인</span>
+              <h3>
+                여름방학 학생 특별할인
+                <p>(학생증 지참)</p>
+              </h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount3.jpg" alt="아쿠아밤 패키지 특가" />
+            <div class="background">
+              <span>온라인 할인</span>
+              <h3>아쿠아밤 패키지 특가</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount4.png" alt="아쿠아밤 AFTER 7 야간특가" />
+            <div class="background">
+              <span>온라인 할인</span>
+              <h3>아쿠아밤 AFTER 7 야간특가</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount5.png" alt="도로교통공단 대구운전면허시험장 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>도로교통공단 대구운전면허시험장 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount6.jpg" alt="이달의 특가 썸머 판타지위크" />
+            <div class="background">
+              <span>온라인 할인</span>
+              <h3>이달의 특가 썸머 판타지위크</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount7.jpg" alt="트래블월렛 결제할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>트래블월렛 결제할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount8.jpg" alt="블루멤버스 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>블루멤버스 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount9.jpg" alt="SRT 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>SRT 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount10.jpg" alt="하나카드 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>하나카드 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount11.jpg" alt="네이버페이 결제할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>네이버페이 결제할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount12.jpg" alt="롯데시네마 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>롯데시네마 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount13.jpg" alt="CGV 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>CGV 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount14.jpg" alt="예스교복 패키지" />
+            <div class="background">
+              <span>현장 + 온라인 할인</span>
+              <h3>예스교복 패키지</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount15.jpg" alt="대구 메리어트 호텔 제휴할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>대구 메리어트 호텔 제휴할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount16.jpg" alt="티웨이항공 탑승권 할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>티웨이항공 탑승권 할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount17.jpg" alt="제주항공 탑승권 할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>제주항공 탑승권 할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount18.jpg" alt="아시아나항공 탑승권 할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>아시아나항공 탑승권 할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount19.jpg" alt="진에어 탑승권 할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>진에어 탑승권 할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount20.jpg" alt="문화누리카드 우대할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>문화누리카드 우대할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount21.jpg" alt="카카오페이 결제할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>카카오페이 결제할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount22.jpg" alt="SKT 멤버십 할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>SKT 멤버십 할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount23.jpg" alt="LGU+ 멤버십 할인" />
+            <div class="background">
+              <span>현장 + 온라인 할인</span>
+              <h3>LGU+ 멤버십 할인</h3>
+            </div>
+          </li>
+          <li>
+            <img src="./assert/discount/discount24.jpg" alt="KT 멤버십 할인" />
+            <div class="background">
+              <span>현장 할인</span>
+              <h3>KT 멤버십 할인</h3>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
