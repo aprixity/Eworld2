@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_15095" data-name="사각형 15095" width="85" height="85" transform="translate(478 955)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_14458" data-name="사각형 14458" width="41.537" height="34.19" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_12099" data-name="마스크 그룹 12099" transform="translate(-478 -955)" clip-path="url(#clip-path)">
+    <g id="그룹_13322" data-name="그룹 13322" transform="translate(500 999.099)">
+      <g id="그룹_13321" data-name="그룹 13321" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+        <path id="패스_20898" data-name="패스 20898" d="M38.23,32.4H4.06A3.309,3.309,0,0,1,.75,29.1V2.9H38.23Z" transform="translate(0.213 0.823)" fill="#fff"/>
+        <path id="패스_20899" data-name="패스 20899" d="M38.23,32.4H4.06A3.309,3.309,0,0,1,.75,29.1V2.9H38.23Z" transform="translate(0.213 0.823)" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14456" data-name="사각형 14456" width="16.536" height="8.807" transform="translate(24.038 14.072)" fill="#fff"/>
+        <rect id="사각형_14457" data-name="사각형 14457" width="16.536" height="8.807" transform="translate(24.038 14.072)" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <path id="패스_20900" data-name="패스 20900" d="M24.428,14.719a1.487,1.487,0,1,1-1.487-1.487,1.486,1.486,0,0,1,1.487,1.487" transform="translate(6.092 3.757)" fill="#fff"/>
+        <circle id="타원_2510" data-name="타원 2510" cx="1.487" cy="1.487" r="1.487" transform="translate(27.546 16.988)" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <path id="패스_20901" data-name="패스 20901" d="M38.23.75H3.51a2.76,2.76,0,1,0,0,5.521H38.23Z" transform="translate(0.213 0.213)" fill="#e7eefe"/>
+        <path id="패스_20902" data-name="패스 20902" d="M38.23.75H3.51a2.76,2.76,0,1,0,0,5.521H38.23Z" transform="translate(0.213 0.213)" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

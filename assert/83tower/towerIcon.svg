@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_15097" data-name="사각형 15097" width="85" height="85" transform="translate(1081 955)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_14470" data-name="사각형 14470" width="26.713" height="78.363" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_12101" data-name="마스크 그룹 12101" transform="translate(-1081 -955)" clip-path="url(#clip-path)">
+    <g id="그룹_13332" data-name="그룹 13332" transform="translate(-250 3.357)">
+      <rect id="사각형_14468" data-name="사각형 14468" width="24.636" height="11.092" transform="translate(1361.038 1017.975)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+      <g id="그룹_13331" data-name="그룹 13331" transform="translate(1360 951.742)">
+        <rect id="사각형_14460" data-name="사각형 14460" width="15.54" height="7.21" transform="translate(5.587 27.551)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14461" data-name="사각형 14461" width="15.54" height="7.21" transform="translate(5.587 27.551)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14462" data-name="사각형 14462" width="10.69" height="4.325" transform="translate(8.011 23.225)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14463" data-name="사각형 14463" width="10.69" height="4.325" transform="translate(8.011 23.225)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14464" data-name="사각형 14464" width="7.165" height="3.111" transform="translate(9.774 20.115)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14465" data-name="사각형 14465" width="7.165" height="3.111" transform="translate(9.774 20.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <path id="패스_30849" data-name="패스 30849" d="M0,0H7.165V31.472H0Z" transform="translate(9.774 34.761)" fill="#e7eefe" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+        <rect id="사각형_14467" data-name="사각형 14467" width="7.165" height="31.472" transform="translate(9.774 34.761)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <g id="그룹_13326" data-name="그룹 13326">
+          <g id="그룹_13325" data-name="그룹 13325" clip-path="url(#clip-path-2)">
+            <rect id="사각형_14469" data-name="사각형 14469" width="24.636" height="11.092" transform="translate(1.038 66.233)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+          </g>
+        </g>
+        <rect id="사각형_14471" data-name="사각형 14471" width="13.414" height="3.748" transform="translate(6.649 62.486)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14472" data-name="사각형 14472" width="13.414" height="3.748" transform="translate(6.649 62.486)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14473" data-name="사각형 14473" width="2.82" height="5.911" transform="translate(11.947 14.204)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <rect id="사각형_14474" data-name="사각형 14474" width="2.82" height="5.911" transform="translate(11.947 14.204)" fill="#e7eefe" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <path id="패스_20908" data-name="패스 20908" d="M16.078,0V0Z" transform="translate(-2.721)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <g id="그룹_13328" data-name="그룹 13328">
+          <g id="그룹_13327" data-name="그룹 13327" clip-path="url(#clip-path-2)">
+            <line id="선_801" data-name="선 801" y1="14.204" transform="translate(13.357)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+          </g>
+        </g>
+        <path id="패스_20911" data-name="패스 20911" d="M3.954,37.5h0Z" transform="translate(-0.669 -6.347)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+        <g id="그룹_13330" data-name="그룹 13330">
+          <g id="그룹_13329" data-name="그룹 13329" clip-path="url(#clip-path-2)">
+            <line id="선_804" data-name="선 804" x2="20.144" transform="translate(3.285 31.155)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
