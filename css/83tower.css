@@ -1,0 +1,11 @@
+#main {
+  width: 100%;
+  padding-top: 80px;
+}
+#main h1 {
+  text-align: center;
+  font-size: 25px;
+}
+#main span {
+  font-family: var(--bold);
+}
