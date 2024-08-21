@@ -110,13 +110,13 @@
   background-color: var(--point);
 }
 .tab_cont img {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 50%;
 }
 .tab_cont {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
 }
 .tab_cont ul {
@@ -131,8 +131,8 @@
   position: relative;
 }
 .tab_cont .background {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   background-color: #00000075;
   position: absolute;
   left: 20px;
@@ -186,10 +186,6 @@
   display: flex;
   flex-wrap: wrap;
   width: 2700px;
-}
-.e_slider {
-  /* position: relative; */
-  /* width: 900px; */
 }
 .e_slider img {
   width: 900px;
@@ -252,7 +248,7 @@
 #discount {
   padding-top: 50px;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
   background-image: url(../assert/discount.svg);
 }
 #discount h1 {
@@ -268,35 +264,57 @@
   display: flex;
   padding-top: 40px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #discount ul li {
-  padding: 20px;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  background-color: #fff;
   position: relative;
+  border-radius: 30px;
+  border: 1px solid var(--gray);
+}
+#discount ul li:hover {
+  scale: 1.1;
+  z-index: 99;
+  box-shadow: 0px 0px 50px var(--point);
 }
 #discount img {
-  width: 250px;
+  width: 200px;
 }
 #discount .background {
-  width: 250px;
-  height: 130px;
+  width: 200px;
+  height: 110px;
   background-color: #fff;
 }
 #discount .background span {
   position: absolute;
-  bottom: 105px;
-  left: 40px;
+  bottom: 75px;
+  left: 25px;
   font-size: 13px;
   color: #9b9b9b;
 }
 #discount .background h3 {
-  width: 230px;
+  width: 195px;
   display: flex;
   flex-wrap: wrap;
   font-size: 19px;
   font-family: var(--bold);
   padding-top: 50px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 #discount .background p {
   font-size: 17px;
+}
+#discount .more_item {
+  display: none;
+}
+#discount button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--point);
+  padding: 10px 50px;
+  border-radius: 30px;
+  margin-top: 30px;
 }

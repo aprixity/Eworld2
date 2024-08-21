@@ -1,6 +1,16 @@
 'use strict';
 
 window.onload = function () {
+  // 헤더 tab
+  const htabBtn = document.querySelectorAll('.h-tab-btn > ul > li > a');
+
+  htabBtn.forEach((hbtn) => {
+    hbtn.addEventListener('click', function () {
+      htabBtn.forEach((hbtn) => hbtn.classList.remove('h-active'));
+      hbtn.classList.add('h-active');
+    });
+  });
+
   // nav
   const navList = document.querySelector('.nav > ul');
   const subMenus = document.querySelectorAll('.nav > ul > li> ul');
@@ -119,5 +129,17 @@ window.onload = function () {
         eventGotoSlider(eventNextIndex);
       }
     });
+  });
+
+  // 더보기 버튼
+  document.getElementById('more_btn').addEventListener('click', function () {
+    const moreItems = document.querySelectorAll('.more_item');
+    const hidden = moreItems[0].style.display === 'none' || moreItems[0].style.display === '';
+
+    moreItems.forEach(function (item) {
+      item.style.display = hidden ? 'list-item' : 'none';
+    });
+
+    this.textContent = hidden ? '접기' : '더보기';
   });
 };
