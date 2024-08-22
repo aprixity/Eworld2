@@ -2,8 +2,18 @@
 
 window.onload = function () {
   // 새로고침
+  let delay = 300;
+  let timer = null;
+
   window.addEventListener('resize', function () {
-    location.reload();
+    this.clearTimeout(timer);
+    timer = this.setTimeout(function () {
+      if (window.innerWidth <= 1400) {
+        location.reload();
+      } else {
+        location.reload();
+      }
+    }, delay);
   });
 
   // 헤더 tab
