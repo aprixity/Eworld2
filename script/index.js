@@ -1,6 +1,11 @@
 'use strict';
 
 window.onload = function () {
+  // 새로고침
+  window.addEventListener('resize', function () {
+    location.reload();
+  });
+
   // 헤더 tab
   const htabBtn = document.querySelectorAll('.h-tab-btn > ul > li > a');
 

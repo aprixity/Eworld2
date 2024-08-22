@@ -27,7 +27,7 @@
 .slider img {
   width: 100%;
   height: 620px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .slider_btn a {
   position: absolute;
@@ -116,7 +116,7 @@
   border-radius: 50%;
 }
 .tab_cont {
-  width: 1300px;
+  width: 90%;
   margin: 0 auto;
 }
 .tab_cont ul {
@@ -159,7 +159,7 @@
 
 /* event */
 #event {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 50px;
   position: relative;
@@ -234,18 +234,19 @@
 .e_slider_side1 {
   width: 200px;
   position: absolute;
-  left: -100px;
+  left: 10%;
   bottom: 130px;
 }
 .e_slider_side2 {
   width: 250px;
   position: absolute;
-  right: -150px;
+  right: 10%;
   top: 100px;
 }
 
 /* discount */
 #discount {
+  width: 100%;
   padding-top: 50px;
   position: relative;
   padding-bottom: 130px;
@@ -259,7 +260,7 @@
   font-family: var(--bold);
 }
 #discount ul {
-  width: 1500px;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   padding-top: 40px;
@@ -317,4 +318,18 @@
   padding: 10px 50px;
   border-radius: 30px;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  /* event */
+  .e_sliderwrap {
+    width: 700px;
+  }
+  .e_slider_inner {
+    width: 2100px;
+  }
+  .e_slider img {
+    width: 700px;
+    height: 390px;
+  }
 }
