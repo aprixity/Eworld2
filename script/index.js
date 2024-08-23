@@ -52,54 +52,53 @@ window.onload = function () {
   });
 
   // 슬라이드
-  const sliderInner = document.querySelector('.slider_inner'); //움직이는 영역
-  const slider = document.querySelectorAll('.slider'); //각각의 이미지
-  const sliderDot = document.querySelector('.slider_dot'); // 닷메뉴
-  const sliderImg2 = document.querySelector('.sliderimg');
-
   let currentIndex = 0;
-  let sliderCount = slider.length;
-  let sliderWidth = sliderImg2.offsetWidth;
+  const sliderWrap = document.querySelector('.sliderwrap');
+  const slider = document.querySelectorAll('.slider');
+  const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
+  sliderWrap.appendChild(sliderClone);
+  const sliderBtn = document.querySelector('.slider_btn');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  const sliderDot = document.querySelector('.slider_dot');
 
-  let dotIndex = '';
+  prevBtn.addEventListener('click', function () {
+    currentIndex--;
+    sliderWrap.style.transition = 'all 0.6s';
+    sliderWrap.style.marginLeft = -currentIndex * 100 + '%';
 
-  function intit() {
-    slider.forEach(() => (dotIndex += "<a herf='javascript:' class='dot'></a>"));
-    sliderDot.innerHTML = dotIndex;
-
-    sliderDot.firstChild.classList.add('active');
-  }
-  intit();
-
-  function gotoSlider(num) {
-    sliderInner.style.transition = 'all 400ms';
-    // sliderInner.style.marginLeft = -currentIndex * 100 + '%';
-    sliderInner.style.transform = 'translateX(' + -sliderWidth * num + 'px)';
-    currentIndex = num;
-
-    let dotActive = document.querySelectorAll('.slider_dot .dot');
-    dotActive.forEach((el) => el.classList.remove('active'));
-    dotActive[num].classList.add('active');
-  }
-
-  document.querySelectorAll('.slider_btn a').forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      let prevIndex = (currentIndex + (sliderCount - 1)) % sliderCount;
-      let nextIndex = (currentIndex + 1) % sliderCount;
-
-      if (btn.classList.contains('prev')) {
-        gotoSlider(prevIndex);
-      } else {
-        gotoSlider(nextIndex);
-      }
-    });
+    if (currentIndex == -1) {
+      sliderWrap.style.transition = 'all 0.6s';
+      sliderWrap.style.marginLeft = '0';
+      currentIndex = slider.length;
+    }
   });
 
-  document.querySelectorAll('.slider_dot .dot').forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      gotoSlider(index);
-    });
+  nextBtn.addEventListener('click', function () {
+    currentIndex++;
+    sliderWrap.style.transition = 'all 0.6s';
+    sliderWrap.style.marginLeft = -currentIndex * 100 + '%';
+
+    if (currentIndex == slider.length) {
+      sliderWrap.style.transition = 'all 0.6s';
+      sliderWrap.style.marginLeft = '0';
+      currentIndex = 0;
+    }
   });
+
+  // setInterval(() => {
+  //   currentIndex++;
+  //   sliderWrap.style.transition = 'all 0.6s';
+  //   sliderWrap.style.marginLeft = -currentIndex * 100 + '%';
+
+  //   if (currentIndex == slider.length) {
+  //     setTimeout(() => {
+  //       sliderWrap.style.transition = '0s';
+  //       sliderWrap.style.marginLeft = '0';
+  //       currentIndex = 0;
+  //     }, 700);
+  //   }
+  // }, 5000);
 
   // tab
   const tabBtn = document.querySelectorAll('.tab_btn > ul > li > a');
