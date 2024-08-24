@@ -2,18 +2,8 @@
 
 window.onload = function () {
   // 새로고침
-  let delay = 300;
-  let timer = null;
-
   window.addEventListener('resize', function () {
-    this.clearTimeout(timer);
-    timer = this.setTimeout(function () {
-      if (window.innerWidth <= 1400) {
-        location.reload();
-      } else {
-        location.reload();
-      }
-    }, delay);
+    location.reload();
   });
 
   // 헤더 tab
@@ -57,10 +47,22 @@ window.onload = function () {
   const slider = document.querySelectorAll('.slider');
   const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
   sliderWrap.appendChild(sliderClone);
-  const sliderBtn = document.querySelector('.slider_btn');
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
-  const sliderDot = document.querySelector('.slider_dot');
+
+  setInterval(() => {
+    currentIndex++;
+    sliderWrap.style.marginLeft = -currentIndex * 100 + '%';
+    sliderWrap.style.transition = 'all 0.6s';
+
+    if (currentIndex == slider.length) {
+      setTimeout(() => {
+        sliderWrap.style.marginLeft = '0';
+        sliderWrap.style.transition = '0s';
+        currentIndex = 0;
+      }, 700);
+    }
+  }, 4000);
 
   prevBtn.addEventListener('click', function () {
     currentIndex--;
@@ -85,20 +87,6 @@ window.onload = function () {
       currentIndex = 0;
     }
   });
-
-  // setInterval(() => {
-  //   currentIndex++;
-  //   sliderWrap.style.transition = 'all 0.6s';
-  //   sliderWrap.style.marginLeft = -currentIndex * 100 + '%';
-
-  //   if (currentIndex == slider.length) {
-  //     setTimeout(() => {
-  //       sliderWrap.style.transition = '0s';
-  //       sliderWrap.style.marginLeft = '0';
-  //       currentIndex = 0;
-  //     }, 700);
-  //   }
-  // }, 5000);
 
   // tab
   const tabBtn = document.querySelectorAll('.tab_btn > ul > li > a');
