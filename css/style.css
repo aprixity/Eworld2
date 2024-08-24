@@ -353,24 +353,19 @@
 
 @media screen and (max-width: 1000px) {
   #h-tab-menu {
-    width: 800px;
-    margin: 0 auto;
-  }
-  #h-tab-menu .login {
     display: none;
   }
 
   #header {
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
     height: 100px;
     justify-content: left;
     position: relative;
   }
   #header .logo {
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
   .nav {
     display: none;
