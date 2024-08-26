@@ -94,7 +94,7 @@
   border-radius: 50%;
 }
 .tab_cont {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .tab_cont ul {
@@ -327,6 +327,15 @@
   /* slider */
   .sliderwrap {
     height: 300px;
+  }
+  .slider_btn button {
+    font-size: 50px;
+  }
+  .slider_btn button.prev {
+    left: 50px;
+  }
+  .slider_btn button.next {
+    right: 50px;
   }
 
   /* event */

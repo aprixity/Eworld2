@@ -120,7 +120,7 @@ window.onload = function () {
     currentImg = eventNum;
   }
 
-  document.querySelectorAll('.e_slider_btn a').forEach((btn, index) => {
+  document.querySelectorAll('.e_slider_btn a').forEach((btn) => {
     btn.addEventListener('click', () => {
       let eventPrevIndex = (currentImg + (eventSliderCount - 1)) % eventSliderCount;
       let eventNextIndex = (currentImg + 1) % eventSliderCount;
@@ -143,5 +143,15 @@ window.onload = function () {
     });
 
     this.textContent = hidden ? '접기' : '더보기';
+  });
+
+  // 모바일 tab
+  const mtabBtn = document.querySelectorAll('.sidebar_tab > li');
+
+  mtabBtn.forEach((mbtn) => {
+    mbtn.addEventListener('click', function () {
+      mtabBtn.forEach((mbtn) => mbtn.classList.remove('m-active'));
+      mbtn.classList.add('m-active');
+    });
   });
 };
