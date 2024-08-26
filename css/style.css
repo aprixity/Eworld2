@@ -21,10 +21,13 @@
 * {
   font-family: 'Pretendard-Regular';
   color: #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #wrap {
-  width: 100%;
+  width: calc(100vw - (100vw - 100%));
   margin: 0 auto;
 }
 
@@ -169,6 +172,15 @@
 }
 .spot img {
   width: 45px;
+}
+.menu_btn {
+  display: none;
+}
+.close_btn {
+  display: none;
+}
+.sidebar_login {
+  display: none;
 }
 
 /* footer */
@@ -351,8 +363,8 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  #h-tab-menu {
+@media screen and (max-width: 1020px) {
+  #top-menu {
     display: none;
   }
 
@@ -366,11 +378,165 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 99999;
   }
-  .nav {
+  .footer1 {
     display: none;
+  }
+  .footer2 {
+    width: 80%;
+  }
+
+  /* 태블릿 사이드 메뉴 */
+  .menu_btn {
+    display: block;
+    position: absolute;
+    right: 80px;
+    top: 35px;
+  }
+  .menu_btn img {
+    width: 30px;
+  }
+  .sidebar_menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .close_btn {
+    display: block;
+    position: absolute;
+    right: 80px;
+    top: 35px;
+  }
+  .close_btn img {
+    width: 30px;
+  }
+  .sidebar_login {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+  .sidebar_login li {
+    padding: 20px 50px;
   }
   .spot {
-    display: none;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 250px;
+    z-index: 9999;
+    background-color: var(--gray);
+  }
+  .spot > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+  }
+  .spot > ul > li {
+    padding: 0px 50px;
+  }
+  .spot span {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #5e5e5e;
+  }
+  .spot img {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 30px;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 3px #5e5e5e;
+  }
+  .spot1 {
+    background-image: url(../assert/header/ticket.png);
+  }
+  .spot2 {
+    background-image: url(../assert/header/people.png);
+  }
+  .spot3 {
+    background-image: url(../assert/header/member-card.png);
+  }
+  .sidebar_tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 370px;
+    background-color: #fff;
+  }
+  .sidebar_tab li {
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid var(--gray);
+    font-family: 'Pretendard-Regular';
+  }
+  .sidebar_tab .m-active {
+    background-color: var(--point);
+    color: #fff;
+  }
+  .sidebar_tab .m-active a {
+    font-family: var(--bold);
+  }
+  .nav > ul {
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    left: 20px;
+    top: 460px;
+  }
+  .nav > ul > li {
+    position: relative;
+  }
+  .nav > ul > li > a {
+    display: block;
+    padding: 20px 50px;
+    font-family: 'Pretendard-Regular';
+    font-size: 25px;
+  }
+  .nav > ul > li > a:hover {
+    color: var(--point);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #footer {
+    width: 90%;
+    display: block;
+    position: relative;
+  }
+  .footer2 {
+    width: 100%;
+    padding-top: 60px;
+  }
+  .footer2-1 ul li {
+    font-size: 15px;
+  }
+  .footer2-2 {
+    font-size: 13px;
+    color: #afafaf;
+    padding-top: 20px;
+  }
+  .footer4 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 10px;
+  }
+
+  #top_btn {
+    bottom: 20px;
+    margin-right: 50px;
   }
 }
