@@ -17,8 +17,8 @@ window.onload = function () {
   });
 
   // nav
-  const navList = document.querySelector('.nav > ul');
-  const subMenus = document.querySelectorAll('.nav > ul > li> ul');
+  const navList = document.querySelector('.nav_list > ul');
+  const subMenus = document.querySelectorAll('.nav_list > ul > li> ul');
 
   subMenus.forEach(function (submenu) {
     submenu.style.display = 'block';
@@ -153,5 +153,26 @@ window.onload = function () {
       mtabBtn.forEach((mbtn) => mbtn.classList.remove('m-active'));
       mbtn.classList.add('m-active');
     });
+  });
+
+  // 모바일 햄버거
+  const menuBtn = document.querySelector('.menu_btn');
+  const closeBtn = document.querySelector('.close_btn');
+  const sidebarMenu = document.querySelector('.sidebar_menu');
+  const spot = document.querySelector('.spot');
+  const nav = document.querySelector('.nav_list');
+
+  menuBtn.addEventListener('click', function () {
+    sidebarMenu.style.display = 'block';
+    // sidebarMenu.style.transition = 'all 0.6s';
+    nav.style.display = 'block';
+    spot.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function () {
+    sidebarMenu.style.display = 'none';
+    // sidebarMenu.style.transition = '0s';
+    nav.style.display = 'none';
+    spot.style.display = 'none';
   });
 };
